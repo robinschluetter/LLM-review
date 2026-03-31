@@ -28,7 +28,7 @@ Be consise and actionalbe. Diff:
 {diff[:8000]}
             """
     response = client.chat.competions.create(
-        model = "llama-3.3-70b-versatile"
+        model = "llama-3.3-70b-versatile",
         messages = [{"role":"user","content": prompt}]
     )
 
