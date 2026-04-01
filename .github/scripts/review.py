@@ -27,7 +27,7 @@ def groq_review(diff):
 Be consise and actionalbe. Diff:
 {diff[:8000]}
             """
-    response = client.chat.competions.create(
+    response = client.chat.completions.create(
         model = "llama-3.3-70b-versatile",
         messages = [{"role":"user","content": prompt}]
     )
