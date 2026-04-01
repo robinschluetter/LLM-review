@@ -35,7 +35,7 @@ Be consise and actionalbe. Diff:
     return response.choices[0].message.content
 
 def post_comment(review):
-    url = f"https://api.github.com/repos/{REPO}/issues/{PR_NUMBER}/comments"
+    url = f"https://api.github.com/repos/{REPO}/issues/{PR_NUMBER}/commentss"
     headers = {
         "Authoriztion": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd/github.v3+json"
